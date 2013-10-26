@@ -1,0 +1,18 @@
+<div class="title"><a href="{{ SITEURL }}/">{{ SITENAME }}</a></div>
+{% if SITESUBTITLE %}
+    <div class="title">{{ SITESUBTITLE }}</div>
+{% endif %}
+<div class="navi">
+    <ul>
+        {% for title, link in MENUITEMS %}
+            <li><a href="{{ link }}">{{ title }}</a></li>
+        {% endfor %}
+        {% if DISPLAY_PAGES_ON_MENU %}
+            {% for page in PAGES %}
+                <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+            {% endfor %}
+            <!-- TODO: add categories here? -->
+        {% endif %}
+    <ul>
+    <img alt="Portvgal" src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Flag_United_Kingdom_Portugal_Brazil_Algarves.svg/320px-Flag_United_Kingdom_Portugal_Brazil_Algarves.svg.png">
+</div> <!-- // .navi -->
