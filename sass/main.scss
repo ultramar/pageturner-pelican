@@ -80,6 +80,14 @@ header {
 		font-family: $blog-title-font;
 		font-size: $blog-title-font-size;
 		text-transform: $blog-title-text-transform;
+		color: $blog-title-color;
+		}
+
+	.subtitle {
+		font-family: $blog-subtitle-font;
+		font-size: $blog-subtitle-font-size;
+		text-transform: $blog-subtitle-text-transform;
+		color: $blog-subtitle-color;
 		}
 	
 	.navi {
@@ -97,7 +105,7 @@ header {
 				padding: 0 ($navi-link-spacing/2 * 1em);
 				
 				a {
-					color: $black;
+					color: $dark-gray;
 					text-decoration: none;
 					
 					&:hover,
@@ -106,8 +114,20 @@ header {
 						} 
 					} /* // a */
 				} /* // li */
-			} /* // ul */
+			} /* // ul */		
 		} /* // .navi */
+
+		footer {
+			margin-top: $header_spacing;
+			border-top: 1px solid $light-gray;
+			color: $dark-gray;
+
+			.fleuron {
+				font-size: $fleuron-size;
+				color: $dark-gray;
+			}
+		}
+
 	} /* // header */
 	
 a {
@@ -139,7 +159,22 @@ article {
 		padding: $tags-spacing 0;
 		border-bottom: 1px solid $light-gray;
 		border-top: 1px solid $light-gray;
+ 		
+ 		#disqus_thread { 			
+			border-top: 1px solid $light-gray;
+			padding: $tags-spacing 0;
+ 		}
+
+ 		.fleuron {
+			font-size: 1.1em;
+			color: $dark-gray;
 		}
+
+		}
+
+	.right {
+		text-align: right;
+	}
 		
 	h1, h2, h3 {
 		text-align: $subheadings-align;

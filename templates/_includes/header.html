@@ -1,6 +1,6 @@
-<div class="title"><a href="{{ SITEURL }}/">{{ SITENAME }}</a></div>
+<div class="title">{{ SITENAME }}</div>
 {% if SITESUBTITLE %}
-    <div class="title">{{ SITESUBTITLE }}</div>
+    <div class="subtitle">{{ SITESUBTITLE }}</div>
 {% endif %}
 <div class="navi">
     <ul>
@@ -13,6 +13,10 @@
             {% endfor %}
             <!-- TODO: add categories here? -->
         {% endif %}
-    <ul>
-    <img alt="Portvgal" src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Flag_United_Kingdom_Portugal_Brazil_Algarves.svg/320px-Flag_United_Kingdom_Portugal_Brazil_Algarves.svg.png">
+    </ul>
+    <img class="title-image" alt="Portvgal" src="{{ SITEURL }}/theme/images/cristo_simples.svg" width="200px">    
 </div> <!-- // .navi -->
+<footer>
+    <p>Fragmentos de política ultramarina portuguesa</p>
+    <p class="fleuron">❧</p>
+</footer>

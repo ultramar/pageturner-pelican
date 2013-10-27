@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
 <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
@@ -25,26 +25,19 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="{{ SITEURL }}/favicon.png" rel="icon">
+  <link href="{{ SITEURL }}/theme/images/favicon.png" rel="icon">
   <link href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" media="screen, projection"
         rel="stylesheet" type="text/css">
-  <script src="{{ SITEURL }}/theme/js/modernizr-2.0.js"></script>
-  <script src="{{ SITEURL }}/theme/js/ender.js"></script>
-  <script src="{{ SITEURL }}/theme/js/octopress.js" type="text/javascript"></script>
 
   <!-- jQuery and plugins -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-  <script src="{{ root_url }}/js/jquery.zclip.min.js"></script>
+  <script src="{{ SITEURL }}/theme/js/jquery.zclip.min.js"></script>
 
-  <!-- Syntax highlighter -->
-  <link href="{{ SITEURL }}/stylesheets/prettify-hemisu.css" type="text/css" rel="stylesheet" />
-  <script type="text/javascript" src="{{ SITEURL }}/js/prettify.js"></script>
+  {% if DISQUS_DEVMODE %}
+  <script type="text/javascript">var disqus_developer = 1; // this would set it to developer mode </script> 
+  {% endif %}
 
-
-  <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
-        rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
-        rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic|Quando&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   {% if article and article.latex %}
     {{ article.latex }}
   {% endif %}
@@ -53,7 +46,7 @@
   {% endif %}
 </head>
 
-<body onload="prettyPrint()">
+<body>
     <div class="wrap">
   <header>{% include '_includes/header.html' %}</header>
   <div id="main">

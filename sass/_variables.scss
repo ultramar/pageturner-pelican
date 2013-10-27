@@ -1,22 +1,30 @@
 /* Colors */
-$main-color: red;
-
 $white: #fff;
 $light-gray: #dfdfdf;
 $light-light-gray: #f8f8f8;
 $gray: #b0b0b0;
+$dark-gray: #696969;
 $black: #333;
+$bordeaux: #9B001C;
+
+$main-color: $bordeaux;
 
 /* Typography */
-$body-font: 'sorts-mill-goudy';
-$body-font-italic: 'sorts-mill-goudy-italic';
+$body-font: 'Sorts Mill Goudy', serif;
+$body-font-italic: 'Sorts Mill Goudy', serif;
 $body-font-size: 1.1em;
 
-$blog-title-font: 'nevis';
-$blog-title-font-size: 2.3em;
+$blog-title-font: 'futura-medium';
+$blog-title-font-size: 2.5em;
 $blog-title-text-transform: uppercase;
+$blog-title-color: $black;
 
-$navi-font: 'sorts-mill-goudy';
+$blog-subtitle-font: 'futura-medium';
+$blog-subtitle-font-size: 0.8em;
+$blog-subtitle-text-transform: uppercase;
+$blog-subtitle-color: $black;
+
+$navi-font: 'Sorts Mill Goudy', serif;
 $navi-font-size: 1.15em;
 
 $page-title-align: center;
@@ -34,13 +42,13 @@ $post-title-font-style: normal;
 $post-title-line-height: 1.3em;
 $post-title-align: center;
 
-$date-font-size: 1em;
+$date-font-size: 0.9em;
 $date-font-style: normal;
 
 $heading-font-size: 1.4em;
 $heading-font-weight: normal;
 $heading-font-style: normal;
-$heading-top-spacing: 2em;
+$heading-top-spacing: 1.5em;
 
 $subheading-font-size: 1.1em;
 $subheading-font-weight: bold;
@@ -60,12 +68,12 @@ $code-background-color: $white;
 $code-block-line-height: 1.8em;
 
 $caption-font-size: 0.9em;
-$caption-font-family: 'sorts-mill-goudy-italic';
+$caption-font-family: 'Sorts Mill Goudy', serif;
 
-$paginator-font-family: 'sorts-mill-goudy';
+$paginator-font-family: 'Sorts Mill Goudy', serif;
 $paginator-font-size: 1em;
 
-$blockquote-font-family: 'sorts-mill-goudy-italic';
+$blockquote-font-family: 'Sorts Mill Goudy', serif;
 $blockquote-font-size: 1em;
 
 /* On the category listing page */
@@ -76,6 +84,8 @@ $month-font-family: 'nevis';
 $month-font-size: 1em;
 $month-spacing-bottom: 0.5em;
 $month-indent: 2em;
+
+$fleuron-size: 2em;
 
 /* Layout */
 
@@ -102,7 +112,7 @@ $post-content-bottom-space: 2em;
 $space-between-posts: 8;
 
 /* Author tags top and bottom spacing */
-$tags-spacing: 1em;
+$tags-spacing: 0.8em;
 
 /* Space before and after a <hr> */
 $hr-spacing: 4em;
